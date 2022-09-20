@@ -1,0 +1,47 @@
+.card {
+    max-width: 570px;
+    margin: auto;
+    box-shadow: 0px 0px 5px rgba(0,0,0, 0.15);
+    transition: all 200ms ease-in-out;
+}
+
+.card__content {
+    display: flex;
+    padding: 1.75rem 1rem;
+    padding-top: 2rem;
+    background-color: white;
+}
+
+.card__content > :not(:last-child) {
+    margin-right: 1rem;
+}
+
+.card__content > div:last-child {
+    flex-grow: 1;
+}
+
+.card__text, .card__author {
+    font-size: 1rem;
+}
+
+.card__author {
+    font-weight: 600;
+    margin-top: 0.5rem;
+    text-align: end;
+}
+
+.card__img {
+    width: 2.5rem;
+}
+
+.card__actions {
+    display: flex;
+    justify-content: end;
+    padding: 0.75rem 1.25rem;
+    background-color: #fafafa;
+}
+
+.card__btn {
+    width: 1.875rem;
+    cursor: pointer;
+}
